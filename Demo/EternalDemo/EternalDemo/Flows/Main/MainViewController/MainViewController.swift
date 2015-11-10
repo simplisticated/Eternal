@@ -26,7 +26,6 @@ class MainViewController: UIViewController {
     }
     
     
-    
     // MARK: Outlets
     
     @IBOutlet private weak var labelTime: UILabel!
