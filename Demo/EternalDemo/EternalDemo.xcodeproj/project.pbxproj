@@ -17,6 +17,7 @@
 		696BB7181BF2871C00B02574 /* ETTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BB7151BF2871C00B02574 /* ETTimer.swift */; };
 		696BB7191BF2871C00B02574 /* ETTimerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BB7161BF2871C00B02574 /* ETTimerBlock.swift */; };
 		696BB71A1BF2871C00B02574 /* ETTimerExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BB7171BF2871C00B02574 /* ETTimerExtensionInitialization.swift */; };
+		69C9A74B1C18CE38002B82EC /* ETDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C9A74A1C18CE38002B82EC /* ETDispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		696BB7151BF2871C00B02574 /* ETTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimer.swift; sourceTree = "<group>"; };
 		696BB7161BF2871C00B02574 /* ETTimerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimerBlock.swift; sourceTree = "<group>"; };
 		696BB7171BF2871C00B02574 /* ETTimerExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimerExtensionInitialization.swift; sourceTree = "<group>"; };
+		69C9A74A1C18CE38002B82EC /* ETDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETDispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		696BB7131BF2871C00B02574 /* Eternal */ = {
 			isa = PBXGroup;
 			children = (
+				69C9A7491C18CE38002B82EC /* Dispatcher */,
 				696BB7141BF2871C00B02574 /* Timer */,
 			);
 			name = Eternal;
@@ -181,6 +184,14 @@
 				696BB7171BF2871C00B02574 /* ETTimerExtensionInitialization.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		69C9A7491C18CE38002B82EC /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				69C9A74A1C18CE38002B82EC /* ETDispatcher.swift */,
+			);
+			path = Dispatcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				696BB71A1BF2871C00B02574 /* ETTimerExtensionInitialization.swift in Sources */,
+				69C9A74B1C18CE38002B82EC /* ETDispatcher.swift in Sources */,
 				696BB6DD1BF2854100B02574 /* AppDelegate.swift in Sources */,
 				696BB70F1BF2859C00B02574 /* MainViewController.swift in Sources */,
 				696BB7181BF2871C00B02574 /* ETTimer.swift in Sources */,
@@ -537,6 +549,7 @@
 				696BB7031BF2854100B02574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		696BB7041BF2854100B02574 /* Build configuration list for PBXNativeTarget "EternalDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +558,7 @@
 				696BB7061BF2854100B02574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		696BB7071BF2854100B02574 /* Build configuration list for PBXNativeTarget "EternalDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +567,7 @@
 				696BB7091BF2854100B02574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
