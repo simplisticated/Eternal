@@ -15,34 +15,7 @@ public class ETDispatcher: NSObject {
     
     // MARK: Class methods
     
-    public class func sharedDispatcher() -> ETDispatcher {
-        struct Singleton {
-            static var dispatcher = ETDispatcher()
-        }
-        
-        return Singleton.dispatcher
-    }
-    
-    
-    // MARK: Initializers
-    
-    public override init() {
-        super.init()
-    }
-    
-    
-    // MARK: Deinitializer
-    
-    deinit {
-    }
-    
-    
-    // MARK: Variables & properties
-    
-    
-    // MARK: Public methods
-    
-    public func dispatchOnQueue(queue: dispatch_queue_t, withBlock block: () -> Void) -> ETDispatcher {
+    public class func dispatchOnQueue(queue: dispatch_queue_t, withBlock block: () -> Void) -> ETDispatcher.Type {
         // Start dispatch
         
         dispatch_async(queue) { () -> Void in
@@ -55,7 +28,7 @@ public class ETDispatcher: NSObject {
         return self
     }
     
-    public func dispatchOnQueue(queue: dispatch_queue_t, afterTimeInterval timeInterval: NSTimeInterval, withBlock block: () -> Void) -> ETDispatcher {
+    public class func dispatchOnQueue(queue: dispatch_queue_t, afterTimeInterval timeInterval: NSTimeInterval, withBlock block: () -> Void) -> ETDispatcher.Type {
         // Start dispatch
         
         if timeInterval > 0.0 {
@@ -77,7 +50,7 @@ public class ETDispatcher: NSObject {
         return self
     }
     
-    public func dispatchOnBackgroundQueueWithBlock(block: () -> Void) -> ETDispatcher {
+    public class func dispatchOnBackgroundQueueWithBlock(block: () -> Void) -> ETDispatcher.Type {
         // Obtain queue
         
         let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
@@ -93,7 +66,7 @@ public class ETDispatcher: NSObject {
         return self
     }
     
-    public func dispatchOnBackgroundQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) -> ETDispatcher {
+    public class func dispatchOnBackgroundQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) -> ETDispatcher.Type {
         // Obtain queue
         
         let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
@@ -111,7 +84,7 @@ public class ETDispatcher: NSObject {
         return self
     }
     
-    public func dispatchOnMainQueueWithBlock(block: () -> Void) -> ETDispatcher {
+    public class func dispatchOnMainQueueWithBlock(block: () -> Void) -> ETDispatcher.Type {
         // Obtain queue
         
         let queue = dispatch_get_main_queue()
@@ -127,7 +100,7 @@ public class ETDispatcher: NSObject {
         return self
     }
     
-    public func dispatchOnMainQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) -> ETDispatcher {
+    public class func dispatchOnMainQueueAfterTimeInterval(timeInterval: NSTimeInterval, withBlock block: () -> Void) -> ETDispatcher.Type {
         // Obtain queue
         
         let queue = dispatch_get_main_queue()
@@ -144,6 +117,25 @@ public class ETDispatcher: NSObject {
         
         return self
     }
+    
+    
+    // MARK: Initializers
+    
+    public override init() {
+        super.init()
+    }
+    
+    
+    // MARK: Deinitializer
+    
+    deinit {
+    }
+    
+    
+    // MARK: Variables & properties
+    
+    
+    // MARK: Public methods
     
     
     // MARK: Private methods
