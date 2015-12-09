@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Eternal"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "The way to manage time in Swift."
 
   # This description is used to generate tags and improve search results.
@@ -56,7 +56,7 @@ Simplifying work with time and queues in Swift.
   s.author             = { "Igor Matyushkin" => "igormatyushkin014@gmail.com" }
   #s.author    = "Igor Matyushkin"
   # s.authors            = { "Igor Matyushkin" => "igormatyushkin014@gmail.com" }
-  s.social_media_url   = "https://twitter.com/i_matyushkin"
+  s.social_media_url   = "https://twitter.com/igormatyushkin1"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
