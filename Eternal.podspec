@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Eternal"
-  s.version      = "1.1"
+  s.version      = "3.0"
   s.summary      = "The way to manage time in Swift."
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Simplifying work with time and queues in Swift.
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -91,7 +91,7 @@ Simplifying work with time and queues in Swift.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Source", "Source/**/*"
+  s.source_files  = "Eternal", "Eternal/**/*"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
