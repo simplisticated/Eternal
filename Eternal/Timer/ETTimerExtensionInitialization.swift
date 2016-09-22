@@ -12,11 +12,11 @@ public extension ETTimer {
     
     // MARK: Public class methods
     
-    public class func every(timeInterval: NSTimeInterval, block: ETTimerBlock) -> ETTimer {
+    public class func every(timeInterval: TimeInterval, block: @escaping ETTimerBlock) -> ETTimer {
         // Obtain result timer
         
         let resultTimer = ETTimer()
-        resultTimer.startWithTimeInterval(timeInterval, repeats: true, block: block)
+        resultTimer.start(withTimeInterval: timeInterval, repeats: true, block: block)
         
         
         // Return result
@@ -24,11 +24,11 @@ public extension ETTimer {
         return resultTimer
     }
     
-    public class func after(timeInterval: NSTimeInterval, block: ETTimerBlock) -> ETTimer {
+    public class func after(timeInterval: TimeInterval, block: @escaping ETTimerBlock) -> ETTimer {
         // Obtain result timer
         
         let resultTimer = ETTimer()
-        resultTimer.startWithTimeInterval(timeInterval, repeats: false, block: block)
+        resultTimer.start(withTimeInterval: timeInterval, repeats: false, block: block)
         
         
         // Return result

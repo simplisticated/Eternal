@@ -36,9 +36,9 @@ public class ETTimer: NSObject {
     
     // MARK: Variables & properties
     
-    private var _internalTimer: NSTimer?
+    private var _internalTimer: Timer?
     
-    private var internalTimer: NSTimer? {
+    private var internalTimer: Timer? {
         get {
             return _internalTimer
         }
@@ -60,9 +60,9 @@ public class ETTimer: NSObject {
         }
     }
     
-    private var _startDate: NSDate?
+    private var _startDate: Date?
     
-    private var startDate: NSDate? {
+    private var startDate: Date? {
         get {
             return _startDate
         }
@@ -71,7 +71,7 @@ public class ETTimer: NSObject {
     
     // MARK: Public methods
     
-    public func startWithTimeInterval(timeInterval: NSTimeInterval, repeats: Bool, block: ETTimerBlock) {
+    public func start(withTimeInterval timeInterval: TimeInterval, repeats: Bool, block: @escaping ETTimerBlock) {
         // Stop internal timer if needed
         
         stop()
@@ -89,12 +89,12 @@ public class ETTimer: NSObject {
         
         // Initialize start date
         
-        _startDate = NSDate()
+        _startDate = Date()
         
         
         // Initialize internal timer
         
-        _internalTimer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: "internalTimerMethod", userInfo: nil, repeats: repeats)
+        _internalTimer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(ETTimer.internalTimerMethod), userInfo: nil, repeats: repeats)
     }
     
     public func stop() {
@@ -125,17 +125,17 @@ public class ETTimer: NSObject {
     internal func internalTimerMethod() {
         // Update tick count
         
-        _tickCount!++
+        _tickCount! += 1
         
         
         // Obtain time interval since start
         
-        let timeIntervalSinceStart = startDate == nil ? 0.0 : NSDate().timeIntervalSinceDate(startDate!)
+        let timeIntervalSinceStart = startDate == nil ? 0.0 : Date().timeIntervalSince(startDate!)
         
         
         // Start timer block
         
-        timerBlock?(timer: self, tickCount: tickCount, timeIntervalSinceStart: timeIntervalSinceStart)
+        timerBlock?(self, tickCount, timeIntervalSinceStart)
     }
     
     

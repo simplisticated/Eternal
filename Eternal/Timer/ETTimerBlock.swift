@@ -8,4 +8,5 @@
 
 import Foundation
 
-public typealias ETTimerBlock = (timer: ETTimer, tickCount: Int, timeIntervalSinceStart: NSTimeInterval) -> Void
+public typealias ETTimerBlock = (_ timer: ETTimer, _ tickCount: Int, _ timeIntervalSinceStart: TimeInterval) -> Void
+

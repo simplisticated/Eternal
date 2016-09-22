@@ -28,12 +28,12 @@ class MainViewController: UIViewController {
     
     // MARK: Outlets
     
-    @IBOutlet private weak var labelTime: UILabel!
+    @IBOutlet fileprivate weak var labelTime: UILabel!
     
     
     // MARK: Variables & properties
     
-    private var timer: ETTimer!
+    fileprivate var timer: ETTimer!
     
     
     // MARK: Public methods
@@ -54,7 +54,7 @@ class MainViewController: UIViewController {
         
         // Initialize timer
         
-        timer = ETTimer.every(1.0) { (timer, tickCount, timeIntervalSinceStart) -> Void in
+        timer = ETTimer.every(timeInterval: 1.0) { (timer, tickCount, timeIntervalSinceStart) -> Void in
             let textForLabelTime = String(format: "Timer: %d", arguments: [tickCount])
             self.labelTime.text = textForLabelTime
         }

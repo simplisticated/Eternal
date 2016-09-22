@@ -14,10 +14,10 @@
 		696BB6FD1BF2854100B02574 /* EternalDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BB6FC1BF2854100B02574 /* EternalDemoUITests.swift */; };
 		696BB70F1BF2859C00B02574 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BB70D1BF2859C00B02574 /* MainViewController.swift */; };
 		696BB7101BF2859C00B02574 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696BB70E1BF2859C00B02574 /* MainViewController.xib */; };
-		696BB7181BF2871C00B02574 /* ETTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BB7151BF2871C00B02574 /* ETTimer.swift */; };
-		696BB7191BF2871C00B02574 /* ETTimerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BB7161BF2871C00B02574 /* ETTimerBlock.swift */; };
-		696BB71A1BF2871C00B02574 /* ETTimerExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696BB7171BF2871C00B02574 /* ETTimerExtensionInitialization.swift */; };
-		69C9A74B1C18CE38002B82EC /* ETDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C9A74A1C18CE38002B82EC /* ETDispatcher.swift */; };
+		696D81231D9487D000074CCC /* ETDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D811E1D9487D000074CCC /* ETDispatcher.swift */; };
+		696D81241D9487D000074CCC /* ETTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D81201D9487D000074CCC /* ETTimer.swift */; };
+		696D81251D9487D000074CCC /* ETTimerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D81211D9487D000074CCC /* ETTimerBlock.swift */; };
+		696D81261D9487D000074CCC /* ETTimerExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D81221D9487D000074CCC /* ETTimerExtensionInitialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +51,10 @@
 		696BB6FE1BF2854100B02574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696BB70D1BF2859C00B02574 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		696BB70E1BF2859C00B02574 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		696BB7151BF2871C00B02574 /* ETTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimer.swift; sourceTree = "<group>"; };
-		696BB7161BF2871C00B02574 /* ETTimerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimerBlock.swift; sourceTree = "<group>"; };
-		696BB7171BF2871C00B02574 /* ETTimerExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimerExtensionInitialization.swift; sourceTree = "<group>"; };
-		69C9A74A1C18CE38002B82EC /* ETDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETDispatcher.swift; sourceTree = "<group>"; };
+		696D811E1D9487D000074CCC /* ETDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETDispatcher.swift; sourceTree = "<group>"; };
+		696D81201D9487D000074CCC /* ETTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimer.swift; sourceTree = "<group>"; };
+		696D81211D9487D000074CCC /* ETTimerBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimerBlock.swift; sourceTree = "<group>"; };
+		696D81221D9487D000074CCC /* ETTimerExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTimerExtensionInitialization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				696BB70A1BF2858A00B02574 /* Flows */,
-				696BB7111BF286E000B02574 /* Libraries */,
+				696D811B1D9487C400074CCC /* Libraries */,
 				696BB6DC1BF2854100B02574 /* AppDelegate.swift */,
 				696BB6E31BF2854100B02574 /* Assets.xcassets */,
 				696BB6E51BF2854100B02574 /* LaunchScreen.storyboard */,
@@ -158,40 +158,40 @@
 			path = MainViewController;
 			sourceTree = "<group>";
 		};
-		696BB7111BF286E000B02574 /* Libraries */ = {
+		696D811B1D9487C400074CCC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				696BB7131BF2871C00B02574 /* Eternal */,
+				696D811C1D9487D000074CCC /* Eternal */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
 		};
-		696BB7131BF2871C00B02574 /* Eternal */ = {
+		696D811C1D9487D000074CCC /* Eternal */ = {
 			isa = PBXGroup;
 			children = (
-				69C9A7491C18CE38002B82EC /* Dispatcher */,
-				696BB7141BF2871C00B02574 /* Timer */,
+				696D811D1D9487D000074CCC /* Dispatcher */,
+				696D811F1D9487D000074CCC /* Timer */,
 			);
 			name = Eternal;
-			path = ../../../../Source;
+			path = ../../../../Eternal;
 			sourceTree = "<group>";
 		};
-		696BB7141BF2871C00B02574 /* Timer */ = {
+		696D811D1D9487D000074CCC /* Dispatcher */ = {
 			isa = PBXGroup;
 			children = (
-				696BB7151BF2871C00B02574 /* ETTimer.swift */,
-				696BB7161BF2871C00B02574 /* ETTimerBlock.swift */,
-				696BB7171BF2871C00B02574 /* ETTimerExtensionInitialization.swift */,
-			);
-			path = Timer;
-			sourceTree = "<group>";
-		};
-		69C9A7491C18CE38002B82EC /* Dispatcher */ = {
-			isa = PBXGroup;
-			children = (
-				69C9A74A1C18CE38002B82EC /* ETDispatcher.swift */,
+				696D811E1D9487D000074CCC /* ETDispatcher.swift */,
 			);
 			path = Dispatcher;
+			sourceTree = "<group>";
+		};
+		696D811F1D9487D000074CCC /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				696D81201D9487D000074CCC /* ETTimer.swift */,
+				696D81211D9487D000074CCC /* ETTimerBlock.swift */,
+				696D81221D9487D000074CCC /* ETTimerExtensionInitialization.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,18 +257,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Igor Matyushkin";
 				TargetAttributes = {
 					696BB6D81BF2854000B02574 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = AFEG59EG8E;
+						LastSwiftMigration = 0800;
 					};
 					696BB6EC1BF2854100B02574 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 696BB6D81BF2854000B02574;
 					};
 					696BB6F71BF2854100B02574 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 696BB6D81BF2854000B02574;
 					};
 				};
@@ -325,12 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696BB71A1BF2871C00B02574 /* ETTimerExtensionInitialization.swift in Sources */,
-				69C9A74B1C18CE38002B82EC /* ETDispatcher.swift in Sources */,
 				696BB6DD1BF2854100B02574 /* AppDelegate.swift in Sources */,
+				696D81251D9487D000074CCC /* ETTimerBlock.swift in Sources */,
+				696D81231D9487D000074CCC /* ETDispatcher.swift in Sources */,
+				696D81241D9487D000074CCC /* ETTimer.swift in Sources */,
+				696D81261D9487D000074CCC /* ETTimerExtensionInitialization.swift in Sources */,
 				696BB70F1BF2859C00B02574 /* MainViewController.swift in Sources */,
-				696BB7181BF2871C00B02574 /* ETTimer.swift in Sources */,
-				696BB7191BF2871C00B02574 /* ETTimerBlock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,8 +394,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -413,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -434,8 +440,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -451,9 +459,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -462,11 +471,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AFEG59EG8E;
 				INFOPLIST_FILE = EternalDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visuality.EternalDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -474,11 +485,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AFEG59EG8E;
 				INFOPLIST_FILE = EternalDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visuality.EternalDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -490,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visuality.EternalDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EternalDemo.app/EternalDemo";
 			};
 			name = Debug;
@@ -502,6 +516,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visuality.EternalDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EternalDemo.app/EternalDemo";
 			};
 			name = Release;
@@ -513,6 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visuality.EternalDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = EternalDemo;
 				USES_XCTRUNNER = YES;
 			};
@@ -525,6 +541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.visuality.EternalDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = EternalDemo;
 				USES_XCTRUNNER = YES;
 			};
