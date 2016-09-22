@@ -2,6 +2,13 @@
   <img src="https://github.com/igormatyushkin014/Eternal/blob/master/Logo/logo-1024-300.png" alt="Eternal" title="Eternal">
 </p>
 
+<p align="center">
+<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/Eternal.svg?maxAge=2592000"></a>
+<a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/dt/Eternal.svg?maxAge=2592000"></a>
+<a href="https://tldrlegal.com/license/mit-license"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat"></a>
+</p>
+
 # Eternal
 
 The way to manage time in Swift.
@@ -12,12 +19,14 @@ The way to manage time in Swift.
 
 or
 
-- Use `Eternal` cocoapod
+- Use `At a Glance` cocoapod
 
 ## Requirements
 
-* iOS 8 and later
-* Xcode 7 and later
+* iOS 9.0 and later
+* Xcode 8 and later
+
+**Note**: For Swift 2.x use `Eternal v1.1`. For Swift 3.0 use `Eternal v3.0`.
 
 ## Usage
 
