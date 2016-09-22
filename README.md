@@ -9,17 +9,17 @@
 <a href="https://tldrlegal.com/license/mit-license"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat"></a>
 </p>
 
-# Eternal
+# At a Glance
 
 The way to manage time in Swift.
 
 ##How To Get Started
 
-- Copy content of `Source` folder to your project.
+- Copy content of `Eternal` folder to your project.
 
 or
 
-- Use `At a Glance` cocoapod
+- Use `Eternal` cocoapod
 
 ## Requirements
 
