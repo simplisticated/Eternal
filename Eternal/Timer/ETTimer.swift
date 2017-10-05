@@ -122,6 +122,7 @@ public class ETTimer: NSObject {
     
     // MARK: Private methods
     
+    @objc
     internal func internalTimerMethod() {
         // Update tick count
         
