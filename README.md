@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat"></a>
+<a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-4-orange.svg?style=flat"></a>
 <a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/v/Eternal.svg?maxAge=2592000"></a>
 <a href="https://cocoapods.org"><img src="https://img.shields.io/cocoapods/dt/Eternal.svg?maxAge=2592000"></a>
 <a href="https://tldrlegal.com/license/mit-license"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat"></a>
@@ -13,7 +13,7 @@
 
 The way to manage time in Swift.
 
-##How To Get Started
+## How To Get Started
 
 - Copy content of `Eternal` folder to your project.
 
@@ -24,9 +24,8 @@ or
 ## Requirements
 
 * iOS 9.0 and later
-* Xcode 8 and later
-
-**Note**: For Swift 2.x use `Eternal v1.1`. For Swift 3.0 use `Eternal v3.0`.
+* Xcode 9.0 and later
+* Swift 4
 
 ## Usage
 
